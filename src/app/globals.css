@@ -1,27 +1,244 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  --palette-blue: #282f52;
+  --palette-green: #c9de3f;
+}
+
+header {
+  background-color: var(--palette-green);
+}
+
+header a {
+  color: var(--palette-blue);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 16px 5%;
+}
+
+button:hover {
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.nav-contact-us {
+  background-color: var(--palette-blue);
+  color: white;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  padding: 10px 16px;
+  border-radius: 6px;
+}
+
+.nav-contact-us:hover {
+  background-color: transparent;
+  border: 1px var(--palette-blue) solid;
+  color: var(--palette-blue);
+}
+
+.nav-sign-in {
+  background-color: transparent;
+  color: var(--palette-blue);
+  border: none;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  padding: 10px 16px;
+  border-radius: 6px;
+}
+
+.nav-sign-in:hover {
+  background-color: white;
+}
+
+.nav-link {
+  padding: 10px 16px;
+  border-radius: 6px;
+  margin: 0px 4px;
+}
+
+.nav-link:hover {
+  border: 1px var(--palette-blue) solid;
+}
+
+#header_menu {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 3rem;
+  gap: .5rem;
+}
+
+#header_menu a{
+  padding: 10px 16px;
+  border-radius: 6px;
+}
+
+#header_menu :not(:last-child):hover{
+  border: 1px var(--palette-blue) solid;
+}
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+.nav-cta {
+  display: flex;
+  gap: 16px;
+}
+
+#header_logo {
+  width: 175px;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.menu-open{
+  display: flex!important;
+}
+
+.menu-icon{
+  display: none!important;
+}
+
+.hero{
+  max-width: 1216px;
+  border-radius: 20px;
+}
+
+/* tablet view */
+@media (max-width: 991px) {
+  .nav-links-group, .nav-cta{
+    display: none;
+  }
+  .menu-icon{
+    display: flex!important;
+  }
+
+  nav{
+    justify-content: space-between;
+    padding: 16px 10%;
+  }
+}
+
+/* mobile view portrait*/
+@media (max-width: 478px) {
+}
+
+/* mobile view landscape */
+@media (max-width: 767px) {
+  
 }
