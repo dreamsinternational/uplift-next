@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import Courses from "@/components/FAQ";
 import FAQ from "@/components/FAQ";
 import { CallWhatsapp } from "@/components/CallWhatsapp";
+import Responsive from "@/components/ResCarousal";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <ContactForm />
       <Features />
+      {/* <Responsive /> */}
       <ExtraData />
       <FAQ />
       <Footer />
