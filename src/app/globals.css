@@ -353,149 +353,89 @@ button:hover {
 /* Contact Form End */
 
 /* Features section start */
-/* 
-.feature-section {
-  padding: 0 10rem;
-  display: flex;
-  justify-content: center;
-}
 
-.feature-section .container {
-  display: flex;
-  gap: 10rem;
-  padding: 10rem 0;
+.feature-section{
+  padding: 2.7rem 2rem;
+  margin-top: 126px;
 }
-
-.feature-section .left {
-  color: var(--palette-blue);
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.feature-section .left h3 {
-  font-size: 1rem;
-}
-
-.feature-section .left h2 {
-  font-size: 2.25rem;
-}
-
-.feature-section .left .buttons-group {
-  display: flex;
-  gap: 1rem;
-}
-
-.feature-section .right {
-  position: relative;
-  max-width: 700px;
-}
-
-.svg-container {
-  position: absolute;
-  width: 20px;
-  z-index: -111;
-  left: 2rem;
-}
-
-.feature-section .right svg {
-  left: 1.2rem;
-}
-
-.feature-section .right .feature {
-  display: flex;
-  gap: 3rem;
-}
-
-.feature-section .right .feature:not(:last-child) {
-  margin-bottom: 10rem;
-}
-
-svg line {
-  stroke: var(--palette-blue);
-  stroke-width: 2;
-}
-
-.backdrop {
-  height: 5rem;
-  width: 100px;
-  display: flex;
-  background-color: var(--palette-green);
-  border-radius: 50%;
-  padding: 1rem;
-  border: 10px white solid;
-}
-
-.Learn-more {
-  background-color: var(--palette-blue);
-  color: white;
-  border: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  padding: 10px 16px;
-  border-radius: 6px;
-}
-
-.Learn-more:hover {
-  background-color: transparent;
-  border: 1px var(--palette-blue) solid;
-  color: var(--palette-blue);
-}
-
-.get-started {
-  background-color: transparent;
-  color: var(--palette-blue);
-  border: none;
-  font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  padding: 10px 16px;
-  border-radius: 6px;
-  border: 1px var(--palette-blue) solid;
-} */
 
 .feature-section .container{
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .feature-section .left h2{
   font-size: 2.25rem;
-  color: var(--palette-blue);
-  font-weight: bold;
+  font-weight: 600;
 }
 
-.feature img{
-  width: 1.7rem;
+.svg-container{
+  position: absolute;
+  z-index: -11;
+  height: 65%;
+  top: 10%;
+  left: 1.7rem;
+  right: auto;
+  width: 2px;
+}
+
+.svg-container .line{
+  background-color: var(--palette-blue);
+  width: 100%;
+  height: 100%;
+}
+
+.buttons-group{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: .75rem;
+  flex-wrap: wrap;
+}
+
+.backdrop img{
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .backdrop{
+  width: 3.5rem;
+  height: 3.5rem;
   background-color: var(--palette-green);
-  width: fit-content;
-  padding: 10px;
-  border-radius: 50%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  /* border-bottom: 4px solid white; */
+}
+
+.backdrop-container{
+  background-color: white;
+  height: fit-content;
+  padding: 1rem 0;
+  margin-top: -1rem;
+}
+
+.feature {
+  padding: 2.5rem 0;
+}
+
+.feature .info h3{
+  font-size: 1.25rem;
+  font-weight: bold; 
+}
+
+.feature-section .right{
+  position: relative;
 }
 
 .feature{
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.feature h3{
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--palette-blue);
-}
-
-.feature p{
-  font: 1rem;
-  color: #475467;
-}
-
-.feature .info{
-  padding: 2.5rem 0;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 2.5rem;
+  row-gap: 2.5rem;
 }
 
 .Learn-more {
@@ -506,6 +446,7 @@ svg line {
   font-size: 14px;
   padding: 10px 16px;
   border-radius: 6px;
+  font-weight: bold;
 }
 
 .Learn-more:hover {
@@ -529,7 +470,98 @@ svg line {
 /* Features section end */
 
 /* carousal courses start */
-    
+
+.carousel-complete{
+  margin: 0 5%;
+}
+
+.carousel-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 1rem;
+}
+
+
+.carousel-top h3{
+  font-size: 2.25rem;
+}
+
+.carousel-top p{
+  font-size: 1.125rem;
+}
+
+.carousel-top button{
+  background-color: var(--palette-blue);
+  color: white;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.carousel-top button:hover {
+  background-color: transparent;
+  border: 1px var(--palette-blue) solid;
+  color: var(--palette-blue);
+}
+
+
+.image-container{
+  width: 100%;
+}
+
+.image-container img{
+  transition: all 1s ease;
+  margin-bottom: 1rem;
+}
+
+.image-container img:hover{
+  scale: 1.04;
+}
+
+.carousel-card{
+  width: 2rem;
+  height: 10rem;
+  padding: 1rem;
+}
+
+.course-group{
+  display: flex;
+  gap: 2rem;
+  background-color: rgba(157, 42, 59, .5);
+  color: white;
+  align-items: center;
+  width: fit-content;
+  padding: 0 1rem;
+  border-radius: 10px;
+}
+
+.group-title{
+  background-color: white;
+  margin: 3px -13px;
+  border-radius: 10px;
+  padding: 1px 10px;
+  color: rgba(157, 42, 59, 1);
+}
+
+.course-title h3{
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.course-desc{
+  margin-bottom: 1rem;
+}
+
+.carousel-card button{
+  color: var(--palette-blue);
+  font-weight: bold;  
+  border-bottom: 1px solid var(--palette-blue);
+}
+
 /* carousal courses end */
 
 
@@ -648,6 +680,10 @@ svg line {
 
 
 /* FAQ Start */
+
+.accordian{
+  text-align: center;
+}
 .faq-section{
   display: flex;
   justify-content: center;
@@ -668,7 +704,10 @@ svg line {
 
 .faq-bottom {
   padding: 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
+
 
 .faq-bottom :not(:last-child){
   margin-bottom: 2rem;
@@ -678,8 +717,12 @@ svg line {
   padding: 1rem;
   color: var(--palette-blue);
   font-size: larger;
+  max-width: 15rem;
 }
 
+.faq-content{
+  max-width: 15rem;
+}
 
 /* FAQ end */
 
@@ -886,5 +929,27 @@ svg line {
   .footer-bottom{
     flex-direction: column;
     gap: 3rem;
+  }
+
+  .feature-section .container{
+    grid-template-columns: 1fr;
+  }
+
+  .svg-container{
+    height: 60%;
+  }
+
+  .faq-bottom{
+    grid-template-columns: 1fr;
+  }
+
+  .callWhatsapp-group img{
+    width: 3.5rem;
+  }
+
+  .carousel-top{
+    flex-direction: column;
+    align-items: start;
+    gap: .5rem;
   }
 }
