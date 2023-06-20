@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import FAQ from "@/components/FAQ";
 import { CallWhatsapp } from "@/components/CallWhatsapp";
 import SimpleSlider from "@/components/ResCarousal";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Features />
       <SimpleSlider />
       <ExtraData />
+      <Testimonials />
       <FAQ />
       <Footer />
       <CallWhatsapp />

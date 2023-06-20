@@ -227,6 +227,12 @@ button:hover {
   border-radius: 20px;
 }
 
+.hero-head h1{
+  font-weight: bold;
+  color: var(--palette-blue);
+  font-size: 52px;
+}
+
 .hero-section {
   padding: 50px 5%;
   display: flex;
@@ -679,6 +685,66 @@ button:hover {
 }
 
 
+/* Testimonials start */
+
+.testimonial-container{
+  margin: 4rem 5%;
+}
+
+.testimonial-card{
+  padding: 2rem;
+  background-color: #f9fafb;
+  border: 2rem white solid;
+}
+
+.testimonial-top h3{
+  color: var(--palette-blue);
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.testimonial-top p{
+  font-size: 1.125rem;
+  color: #475467;
+}
+
+.rating{
+  display: flex;
+  gap: 3px;
+}
+
+.testimonial-card p{
+  font-size: 1.25rem;
+  color: var(--palette-blue);
+  margin: 1rem 0;
+}
+
+.testimonial-card .user{
+  display: flex;
+  gap: 2rem;
+}
+
+.testimonial-card .user-image{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--palette-green);
+}
+
+.user-info .name{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.user-info .prefession{
+  color: #475467;
+}
+
+/* Testimonials end */
+
 /* FAQ Start */
 
 .accordian{
@@ -952,4 +1018,5 @@ button:hover {
     align-items: start;
     gap: .5rem;
   }
+
 }
