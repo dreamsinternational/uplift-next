@@ -27,7 +27,7 @@ export function ContactForm(){
 
                         <div className="submit-btn-group">
                             <button type="submit">Submit The Message</button>
-                            <p>By clicking the submit button, I consent to the Enark Uplift contacting me via email and/or phone to share exclusive educational opportunities and updates. I acknowledge that any information provided in this form is subject to the  Enark Uplift's Privacy Policy.</p>
+                            <p>By clicking the submit button, I consent to the Enark Uplift contacting me via email and/or phone to share exclusive educational opportunities and updates. I acknowledge that any information provided in this form is subject to the Enark Uplift&apos;s Privacy Policy.</p>
                         </div>
                     </div>
                 </div>

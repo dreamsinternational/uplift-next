@@ -35,7 +35,7 @@ export function Features() {
                 </div></div>
                 <div className="info">
                     <h3>Recognized Certifications</h3>
-                    <p>Upon successfully completing our training programs, you'll receive a certificate of completion, validating your professional development achievements.</p>
+                    <p>Upon successfully completing our training programs, you&apos;ll receive a certificate of completion, validating your professional development achievements.</p>
                 </div>
             </div>
             <div className="feature3 feature">

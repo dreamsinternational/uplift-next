@@ -32,7 +32,7 @@ export default function Testimonials() {
     <>
       <div className="testimonial-container">
         <div className="testimonial-top">
-          <h3>Don’t just take our word for it</h3>
+          <h3>Don&apos;t just take our word for it</h3>
           <p>
             Hear from some of our amazing customers who are loving our courses.
           </p>
@@ -49,8 +49,8 @@ export default function Testimonials() {
             </div>
 
             <p>
-              "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Incidunt voluptate nulla repellat voluptatum explicabo totam."
+              &quot;Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Incidunt voluptate nulla repellat voluptatum explicabo totam.&quot;
             </p>
 
             <div className="user">
@@ -74,8 +74,8 @@ export default function Testimonials() {
             </div>
 
             <p>
-              "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Incidunt voluptate nulla repellat voluptatum explicabo totam."
+              &quot;Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Incidunt voluptate nulla repellat voluptatum explicabo totam.&quot;
             </p>
 
             <div className="user">
@@ -99,8 +99,8 @@ export default function Testimonials() {
             </div>
 
             <p>
-              "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Incidunt voluptate nulla repellat voluptatum explicabo totam."
+              &quot;Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Incidunt voluptate nulla repellat voluptatum explicabo totam.&quot;
             </p>
 
             <div className="user">
@@ -124,8 +124,8 @@ export default function Testimonials() {
             </div>
 
             <p>
-              "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Incidunt voluptate nulla repellat voluptatum explicabo totam."
+              &quot;Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Incidunt voluptate nulla repellat voluptatum explicabo totam.&quot;
             </p>
 
             <div className="user">
@@ -149,8 +149,8 @@ export default function Testimonials() {
             </div>
 
             <p>
-              "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Incidunt voluptate nulla repellat voluptatum explicabo totam."
+              &quot;Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Incidunt voluptate nulla repellat voluptatum explicabo totam.&quot;
             </p>
 
             <div className="user">
@@ -174,8 +174,8 @@ export default function Testimonials() {
             </div>
 
             <p>
-              "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Incidunt voluptate nulla repellat voluptatum explicabo totam."
+              &quot;Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Incidunt voluptate nulla repellat voluptatum explicabo totam.&quot;
             </p>
 
             <div className="user">
@@ -199,8 +199,8 @@ export default function Testimonials() {
             </div>
 
             <p>
-              "Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Incidunt voluptate nulla repellat voluptatum explicabo totam."
+              &quot;Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Incidunt voluptate nulla repellat voluptatum explicabo totam.&quot;
             </p>
 
             <div className="user">
