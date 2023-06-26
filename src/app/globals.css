@@ -223,7 +223,6 @@ button:hover {
 /* hero section start */
 .hero {
   width: 100%;
-  max-width: 1216px;
   border-radius: 20px;
 }
 
@@ -271,7 +270,7 @@ button:hover {
   padding: 0 117px 0 124px;
   margin: 58px 0 14px 0;
   align-items: stretch;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: 10rem;
 }
 
@@ -331,6 +330,7 @@ button:hover {
 
 .submit-btn-group{
   display: flex;
+  flex-direction: column;
   align-items: start;
   gap: 24px;
 }
@@ -745,54 +745,6 @@ button:hover {
 
 /* Testimonials end */
 
-/* FAQ Start */
-
-.accordian{
-  text-align: center;
-}
-.faq-section{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-.faq-top{
-  margin: 3rem;
-  padding-bottom: 3rem;
-  border-bottom: 1px gray solid;
-
-}
-
-.faq-top h3{
-  font-size: 52px;
-  color: var(--palette-blue);
-}
-
-.faq-bottom {
-  padding: 1rem 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-
-.faq-bottom :not(:last-child){
-  margin-bottom: 2rem;
-}
-
-.faq-title{
-  padding: 1rem;
-  color: var(--palette-blue);
-  font-size: larger;
-  max-width: 15rem;
-}
-
-.faq-content{
-  max-width: 15rem;
-}
-
-/* FAQ end */
-
-
 /* Footer start */
 
 .footer{
@@ -1003,10 +955,6 @@ button:hover {
 
   .svg-container{
     height: 60%;
-  }
-
-  .faq-bottom{
-    grid-template-columns: 1fr;
   }
 
   .callWhatsapp-group img{
