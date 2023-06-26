@@ -4,7 +4,7 @@ import { Accordion, AccordionItem as Item } from "@szhsin/react-accordion";
 import styles from "../app/styles.module.css";
 
 export default function FAQ() {
-  const AccordionItem = ({ header, ...rest }) => (
+  const AccordionItem = ({ header, ...rest }:any) => (
     <Item
       {...rest}
       header={
